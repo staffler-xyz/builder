@@ -187,8 +187,8 @@ module Builder
     #    finer control over escaping attribute values.
     #
     def initialize(options={})
-      indent = options[:indent] || 0
-      margin = options[:margin] || 0
+      indent = 0
+      margin = 0
       @quote = (options[:quote] == :single) ? "'" : '"'
       @explicit_nil_handling = options[:explicit_nil_handling]
       super(indent, margin)
